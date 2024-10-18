@@ -46,6 +46,7 @@ El proyecto está compuesto por las siguientes clases y subclases:
    - `codigo`: Código del servicio.
    - `nombre`: Nombre del servicio.
    - `precioBase`: Precio base del servicio.
+   - `codigosServicios`: Lista de codigos de servicios (evita duplicados).
 - **Métodos Abstractos**:
    - `calcularPrecioFinal()`: Método que debe ser implementado en las subclases para calcular el precio final del servicio.
 
