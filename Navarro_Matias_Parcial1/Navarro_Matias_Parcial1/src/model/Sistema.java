@@ -22,6 +22,10 @@ public class Sistema {
         throw new CodigoInvalidoException("El codigo no está en el sistema");
     }
 
+    public List<Servicio> getLstServicio() {
+        return lstServicio;
+    }
+
     public ArrayList<Servicio> traerServicio(boolean enOferta) throws CodigoInvalidoException {
         ArrayList<Servicio> serviciosDcto = new ArrayList<>();
         if (lstServicio == null) {
