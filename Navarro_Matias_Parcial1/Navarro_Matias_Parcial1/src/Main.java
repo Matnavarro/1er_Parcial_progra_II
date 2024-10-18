@@ -52,15 +52,11 @@ public class Main {
         System.out.println("----------------- 3 -------------------\n");
         Sistema sistema = new Sistema();
         try {
-            //Servicio gastronomia1 = new Gastronomia("858927", 15.0, true, "Milanesa con pure", 350.0, 3);
-            //Servicio hospedaje1 = new Hospedaje("489259", 10.0, true, "Habitacion triple", 2200.0);
-            //Servicio gastronomia2 = new Gastronomia("182835", 20.0, false, "Gaseosa", 120.0, 3);
-            //Servicio hospedaje2 = new Hospedaje("758972", 15.0, false, "Habitacion simple", 1000.0);
-
             sistema.agregarGastronomia("858927", 15.0, true, "Milanesa con pure", 350.0, 3);
             sistema.agregarHospedaje("489259", 10.0, true, "Habitacion triple", 2200.0);
             sistema.agregarGastronomia("182835", 20.0, false, "Gaseosa", 120.0, 3);
             sistema.agregarHospedaje("758972", 15.0, false, "Habitacion simple", 1000.0);
+            System.out.println(sistema.getLstServicio());
 
         } catch (CodigoInvalidoException e) {
             System.out.println(e.getMessage());
